@@ -1,1 +1,1 @@
-Colecross Landing PAge
+Colecross Landing Page
