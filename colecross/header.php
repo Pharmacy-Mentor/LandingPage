@@ -21,8 +21,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
 
-    <!-- Custom Stylesheet-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <title>Landing Page</title>
+    <?php wp_head(); ?>
 </head>
 <body>
