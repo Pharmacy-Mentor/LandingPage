@@ -15,6 +15,7 @@ function register_services_post_type() {
         'label' => 'Services',
         'public' => true,
         'menu_icon' => 'dashicons-admin-tools',
+//        'supports' => array('service_title', 'service_description')
     ));
 }
 add_action('init', 'register_services_post_type');

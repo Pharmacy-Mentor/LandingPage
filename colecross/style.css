@@ -48,6 +48,9 @@ p{
 .border-radius-10 {
     border-radius: 10px;
 }
+.border-radius-top-5{
+    border-radius: 5px 5px 0 0;
+}
 
 /* Containers */
 .container-content{
@@ -85,10 +88,12 @@ p{
     max-width: 1170px;
 }
 .service{
-    padding: 50px 30px;
     color: var(--light_blue);
     background-color: var(--white);
     border-radius: 5px;
+}
+.service-content{
+    padding: 30px 30px 50px 30px;
 }
 .service i{
     font-size: 35px;
