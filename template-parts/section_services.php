@@ -23,7 +23,7 @@ if($services->have_posts()) { ?>
                                 echo wp_get_attachment_image(get_field('service_image'), 'full', false, ['class' => 'img border-radius-top-5']);
                             } ?>
                             <div class="service-content">
-                                <h4 class="underline-title"><?php echo esc_html(the_title()); ?></h4>
+                                <h4 class=""><?php echo esc_html(the_title()); ?></h4>
                                 <div class="service-description"><?php echo esc_html(the_content()); ?></div>
                             </div>
                         </div>
