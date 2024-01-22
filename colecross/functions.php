@@ -1,7 +1,7 @@
 <?php
 
 function register_styles() {
-    wp_enqueue_style( 'styles', get_template_directory_uri() .'/styles.css', array(), null );
+    wp_enqueue_style( 'styles', get_template_directory_uri() .'/style.css', array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'register_styles' );
 
