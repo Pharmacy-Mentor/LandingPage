@@ -24,7 +24,7 @@ if($services->have_posts()) { ?>
                             } ?>
                             <div class="service-content">
                                 <h4 class=""><?php echo esc_html(the_title()); ?></h4>
-                                <div class="service-description"><?php echo esc_html(the_content()); ?></div>
+                                <div class="service-description"><?php echo esc_html(the_excerpt()); ?></div>
                             </div>
                         </div>
                     </a>
