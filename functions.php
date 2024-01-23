@@ -15,7 +15,11 @@ function register_services_post_type() {
         'label' => 'Services',
         'public' => true,
         'menu_icon' => 'dashicons-admin-tools',
-//        'supports' => array('service_title', 'service_description')
     ));
 }
 add_action('init', 'register_services_post_type');
+
+function custom_excerpt_length($length) {
+    return 20; // Adjust the number to your desired length
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
