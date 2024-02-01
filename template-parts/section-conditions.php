@@ -12,7 +12,7 @@ if($conditions->have_posts()) { ?>
             <div class="row d-flex mx-auto">
 
                 <?php if (get_field('conditions_title')) {
-                    echo '<h2 class="col-xs-12 text-center pb-4 mb-6">' . get_field('conditions_title') . '</h2>';
+                    echo '<h2 class="col-xl-12 text-center pb-4 mb-6">' . get_field('conditions_title') . '</h2>';
                 } ?>
 
                 <?php while ($conditions->have_posts()) : $conditions->the_post(); ?>

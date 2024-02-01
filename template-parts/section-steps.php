@@ -3,7 +3,7 @@
         <div class="row d-flex">
 
             <?php if (get_field('steps_section_title')) {
-                echo '<h2 class="col-xs-12 text-center pb-4 mb-5">' . get_field('steps_section_title') . '</h2>';
+                echo '<h2 class="col-xl-12 text-center pb-4 mb-5">' . get_field('steps_section_title') . '</h2>';
             } ?>
 
                 <?php
@@ -47,7 +47,7 @@
                     $link_url = $link['url'];
                     $link_title = $link['title'];
                     $link_target = $link['target'] ? $link['target'] : '_self'; ?>
-                    <div class="col-xs-12 text-center">
+                    <div class="col-xl-12 text-center">
                         <a class="text-center button btn-custom button-primary button-icon read-more-btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
                             <?php echo esc_html( $link_title ); ?>
                         </a>
