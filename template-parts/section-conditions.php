@@ -6,6 +6,19 @@
 
 $conditions = new WP_Query($args);
 
+
+$box_color = get_field('conditions_box_colour');
+if ($box_color) {
+    echo '<style>
+        .icon-wrapper.has-colour {
+            color: ' . esc_attr($box_color) . ';
+            }
+        .condition.has-colour:hover {
+            background-color: ' . esc_attr($box_color) . ';
+        }
+        </style>';
+}
+
 if($conditions->have_posts()) { ?>
     <section id="conditions" class="container-conditions">
         <div class="container pt-5">
@@ -21,11 +34,11 @@ if($conditions->have_posts()) { ?>
 
                         <?php if (enable_condition_pages()) {
                             echo '<a href="' . get_the_permalink(). '" class="text-decoration-none">';
-                        } ?>
-                        <div class="condition h-100 pm-shadow">
+                        }?>
+                        <?php echo '<div class="condition h-100 pm-shadow' . ($box_color ? ' has-colour' : '') . '">';?>
                             <div class="condition-content">
                                 <?php if (get_field('icon')) {
-                                    echo '<div class="icon-wrapper pm-shadow">';
+                                    echo '<div class="icon-wrapper pm-shadow' . ($box_color ? ' has-colour' : '') . '">';
                                     echo get_field('icon');
                                     echo '</div>';
                                 } ?>
