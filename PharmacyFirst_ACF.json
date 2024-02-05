@@ -130,6 +130,42 @@
         "title": "Pharmacy First",
         "fields": [
             {
+                "key": "field_65bcc8c398283",
+                "label": "Button Text Hover Colour",
+                "name": "pf_button_text_hover_colour",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_65bcc8d698284",
+                "label": "Button Hover Colour",
+                "name": "pf_button_hover_colour",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
                 "key": "field_65a691e4e1586",
                 "label": "Banner",
                 "name": "",
@@ -1029,6 +1065,42 @@
                 "placeholder": "",
                 "prepend": "",
                 "append": ""
+            },
+            {
+                "key": "field_65bcc91898286",
+                "label": "Box Hover Colour",
+                "name": "conditions_box_colour",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_65bcf4c37ac51",
+                "label": "Text Hover Colour",
+                "name": "conditions_text_hover_colour",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
             },
             {
                 "key": "field_65a6940ae9489",
