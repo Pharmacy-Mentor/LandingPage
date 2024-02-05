@@ -6,6 +6,22 @@
 
 $conditions = new WP_Query($args);
 
+$boxColor = get_field('conditions_box_colour');
+if ($boxColor) {
+    echo '<style>
+        .condition.has-colour i { color: ' . esc_attr($boxColor) . '; }
+        .condition.has-colour:hover { background-color: ' . esc_attr($boxColor) . '; }
+        </style>';
+}
+
+$textHoverColor = get_field('conditions_text_hover_colour');
+if ($textHoverColor) {
+    echo '<style>
+        .condition.has-colour:hover p,
+        .condition.has-colour:hover h3 { color: ' . esc_attr($textHoverColor) . ' !important; }
+        </style>';
+}
+
 if($conditions->have_posts()) { ?>
     <section id="conditions" class="container-conditions">
         <div class="container pt-5">
@@ -21,8 +37,8 @@ if($conditions->have_posts()) { ?>
 
                         <?php if (enable_condition_pages()) {
                             echo '<a href="' . get_the_permalink(). '" class="text-decoration-none">';
-                        } ?>
-                        <div class="condition h-100 pm-shadow">
+                        }?>
+                        <?php echo '<div class="condition h-100 pm-shadow' . ($boxColor ? ' has-colour' : '') . '">';?>
                             <div class="condition-content">
                                 <?php if (get_field('icon')) {
                                     echo '<div class="icon-wrapper pm-shadow">';
@@ -31,7 +47,7 @@ if($conditions->have_posts()) { ?>
                                 } ?>
                                 <h3 class="mb-2"><?php echo esc_html(the_title()); ?></h3>
                                 <?php if (get_field('excerpt')){ ?>
-                                    <div class="condition-description">
+                                    <?php echo '<div class="condition-description' . ($textHoverColor ? ' has-colour' : '') . '">';?>
                                         <p><?php the_field('excerpt');?></p>
                                     </div>
                                 <?php } ?>
