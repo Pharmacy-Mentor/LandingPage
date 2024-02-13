@@ -14,12 +14,13 @@
     <div class="container">
         <div class="row row-banner mx-auto align-items-center">
             <div class="col-lg-8 col-md-12">
-                <div class="banner-text">
+                <div class="banner-text"
                     <?php if (get_field('banner_text_colour')) {
                         echo 'data-colour="true"';
                         echo 'style="--_colour:' . get_field('banner_text_colour') . ';"';
-                    }
-
+                    } ?>
+                >
+                <?php
                     if (get_field('banner_title')) {
                         echo '<h1 class="text-lg-left no-underline mt-0 mb-4">' . get_field('banner_title') . '</h1>';
                     }
